@@ -34,11 +34,11 @@ class TaskCardWidget extends StatelessWidget {
             ? AppColors.testingTitleColor
             : AppColors.runningTitleColor;
     return Container(
-      margin: EdgeInsets.only(bottom: sizeX6 * Utils.getScalingFactor(context)),
+      margin: EdgeInsets.only(bottom: 6 * Utils.getScalingFactor(context)),
       width: Utils().width,
       padding: EdgeInsets.symmetric(
-        vertical: sizeX16 * Utils.getScalingFactor(context),
-        horizontal: sizeX22 * Utils.getScalingFactor(context),
+        vertical: 16 * Utils.getScalingFactor(context),
+        horizontal: 22 * Utils.getScalingFactor(context),
       ),
       decoration: BoxDecoration(
         color: backgroundColor,
@@ -60,8 +60,8 @@ class TaskCardWidget extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.symmetric(
-                  horizontal: sizeX10 * Utils.getScalingFactor(context),
-                  vertical: sizeX4 * Utils.getScalingFactor(context),
+                  horizontal: 10 * Utils.getScalingFactor(context),
+                  vertical: 4 * Utils.getScalingFactor(context),
                 ),
                 decoration: BoxDecoration(
                   color: AppColors.white,
@@ -78,12 +78,12 @@ class TaskCardWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: sizeX8 * Utils.getScalingFactor(context)),
+          SizedBox(height: 8 * Utils.getScalingFactor(context)),
           Text(
             taskModel.description,
             style: AppTextTheme.subTitleText.copyWith(color: AppColors.label),
           ),
-          SizedBox(height: sizeX12 * Utils.getScalingFactor(context)),
+          SizedBox(height: 12 * Utils.getScalingFactor(context)),
 
           if (taskStatus != TaskStatusEnum.completed.name)
             GestureDetector(
@@ -97,10 +97,10 @@ class TaskCardWidget extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  SizedBox(width: sizeX6 * Utils.getScalingFactor(context)),
+                  SizedBox(width: 6 * Utils.getScalingFactor(context)),
                   Icon(
                     CupertinoIcons.arrow_right,
-                    size: sizeX18 * Utils.getScalingFactor(context),
+                    size: 18 * Utils.getScalingFactor(context),
                   ),
                 ],
               ),

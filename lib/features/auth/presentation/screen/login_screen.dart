@@ -27,8 +27,8 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.only(
-          left: sizeX20 * Utils.getScalingFactor(context),
-          right: sizeX20 * Utils.getScalingFactor(context),
+          left: 20 * Utils.getScalingFactor(context),
+          right: 20 * Utils.getScalingFactor(context),
         ),
         child: Form(
           key: loginKey,
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(height: 10 * Utils.getScalingFactor(context)),
               Text(
                 "Login to continue",
-                style: TextStyle(fontSize: sizeX16, color: Colors.grey),
+                style: TextStyle(fontSize: font16, color: Colors.grey),
               ),
               SizedBox(height: 30 * Utils.getScalingFactor(context)),
               TextFormField(
@@ -120,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                 ),
               ),
-              SizedBox(height: sizeX20 * Utils.getScalingFactor(context)),
+              SizedBox(height: 20 * Utils.getScalingFactor(context)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

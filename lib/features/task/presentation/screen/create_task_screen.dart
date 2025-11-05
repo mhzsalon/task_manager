@@ -25,15 +25,15 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
       key: taskKey,
       child: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: sizeX24 * Utils.getScalingFactor(context),
-          vertical: sizeX30 * Utils.getScalingFactor(context),
+          horizontal: 24 * Utils.getScalingFactor(context),
+          vertical: 30 * Utils.getScalingFactor(context),
         ),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _labelTextWidget("Task name"),
-              SizedBox(height: sizeX8 * Utils.getScalingFactor(context)),
+              SizedBox(height: 8 * Utils.getScalingFactor(context)),
               TextFormField(
                 controller: taskName,
                 validator: (value) => Utils.validate(value, field: "task"),
@@ -41,15 +41,15 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
                 textCapitalization: TextCapitalization.sentences,
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.symmetric(
-                    horizontal: sizeX14 * Utils.getScalingFactor(context),
-                    vertical: sizeX16 * Utils.getScalingFactor(context),
+                    horizontal: 14 * Utils.getScalingFactor(context),
+                    vertical: 16 * Utils.getScalingFactor(context),
                   ),
                 ),
               ),
-              SizedBox(height: sizeX22 * Utils.getScalingFactor(context)),
+              SizedBox(height: 22 * Utils.getScalingFactor(context)),
 
               _labelTextWidget("Description"),
-              SizedBox(height: sizeX8 * Utils.getScalingFactor(context)),
+              SizedBox(height: 8 * Utils.getScalingFactor(context)),
               TextFormField(
                 controller: description,
                 validator: (value) => Utils.validate(value, field: "desc"),
@@ -58,13 +58,13 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
                 maxLines: 6,
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.symmetric(
-                    horizontal: sizeX14 * Utils.getScalingFactor(context),
-                    vertical: sizeX16 * Utils.getScalingFactor(context),
+                    horizontal: 14 * Utils.getScalingFactor(context),
+                    vertical: 16 * Utils.getScalingFactor(context),
                   ),
                 ),
               ),
 
-              SizedBox(height: sizeX50 * Utils.getScalingFactor(context)),
+              SizedBox(height: 50 * Utils.getScalingFactor(context)),
 
               BlocConsumer<TaskCubit, TaskState>(
                 listener: (context, state) {
@@ -96,7 +96,7 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size.fromWidth(Utils().width),
                       padding: EdgeInsets.symmetric(
-                        vertical: sizeX18 * Utils.getScalingFactor(context),
+                        vertical: 18 * Utils.getScalingFactor(context),
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18),

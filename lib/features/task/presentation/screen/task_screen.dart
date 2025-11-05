@@ -42,13 +42,13 @@ class _TaskScreenState extends State<TaskScreen>
       children: [
         Padding(
           padding: EdgeInsets.only(
-            left: sizeX16 * Utils.getScalingFactor(context),
-            top: sizeX10 * Utils.getScalingFactor(context),
+            left: 16 * Utils.getScalingFactor(context),
+            top: 10 * Utils.getScalingFactor(context),
           ),
           child: TabBar(
             controller: _tabController,
             labelPadding: EdgeInsets.only(
-              right: sizeX12 * Utils.getScalingFactor(context),
+              right: 12 * Utils.getScalingFactor(context),
             ),
             labelStyle: AppTextTheme.bodyText,
             isScrollable: true,
@@ -70,9 +70,9 @@ class _TaskScreenState extends State<TaskScreen>
         Expanded(
           child: Padding(
             padding: EdgeInsets.only(
-              left: sizeX10 * Utils.getScalingFactor(context),
-              right: sizeX10 * Utils.getScalingFactor(context),
-              top: sizeX20 * Utils.getScalingFactor(context),
+              left: 10 * Utils.getScalingFactor(context),
+              right: 10 * Utils.getScalingFactor(context),
+              top: 20 * Utils.getScalingFactor(context),
             ),
             child: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
               stream: FirebaseHelper.fetchTask(),
@@ -142,8 +142,8 @@ class _TaskScreenState extends State<TaskScreen>
   Widget _tabItemWidget(String tab, int index) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: sizeX20 * Utils.getScalingFactor(context),
-        vertical: sizeX12 * Utils.getScalingFactor(context),
+        horizontal: 20 * Utils.getScalingFactor(context),
+        vertical: 12 * Utils.getScalingFactor(context),
       ),
       decoration: BoxDecoration(
         border: Border.all(color: AppColors.primaryColor),

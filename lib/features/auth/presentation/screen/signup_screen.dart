@@ -30,8 +30,8 @@ class _SignupScreenState extends State<SignupScreen> {
         child: Padding(
           padding: EdgeInsets.only(
             top: 160 * Utils.getScalingFactor(context),
-            left: sizeX20 * Utils.getScalingFactor(context),
-            right: sizeX20 * Utils.getScalingFactor(context),
+            left: 20 * Utils.getScalingFactor(context),
+            right: 20 * Utils.getScalingFactor(context),
           ),
           child: Form(
             key: registerKey,
@@ -49,7 +49,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 SizedBox(height: 10 * Utils.getScalingFactor(context)),
                 Text(
                   "Register to continue",
-                  style: TextStyle(fontSize: sizeX16, color: Colors.grey),
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
                 ),
                 SizedBox(height: 30 * Utils.getScalingFactor(context)),
                 TextFormField(
@@ -135,7 +135,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                   ),
                 ),
-                SizedBox(height: sizeX20 * Utils.getScalingFactor(context)),
+                SizedBox(height: 20 * Utils.getScalingFactor(context)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

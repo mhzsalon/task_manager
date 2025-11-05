@@ -18,8 +18,8 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: sizeX20 * Utils.getScalingFactor(context),
-        vertical: sizeX40 * Utils.getScalingFactor(context),
+        horizontal: 20 * Utils.getScalingFactor(context),
+        vertical: 40 * Utils.getScalingFactor(context),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -28,17 +28,17 @@ class ProfileScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
             child: Image.asset(
               "assets/dp.jpg",
-              height: sizeX100 * Utils.getScalingFactor(context),
-              width: sizeX100 * Utils.getScalingFactor(context),
+              height: 100 * Utils.getScalingFactor(context),
+              width: 100 * Utils.getScalingFactor(context),
             ),
           ),
-          SizedBox(height: sizeX10 * Utils.getScalingFactor(context)),
+          SizedBox(height: 10 * Utils.getScalingFactor(context)),
           Text(
             "Full Name",
             style: AppTextTheme.titleText.copyWith(fontWeight: FontWeight.w800),
           ),
           Text("mhze@test.com", style: AppTextTheme.subTitleText),
-          SizedBox(height: sizeX40 * Utils.getScalingFactor(context)),
+          SizedBox(height: 40 * Utils.getScalingFactor(context)),
 
           BlocListener<CheckUserCubit, CheckUserState>(
             listener: (context, state) {
@@ -51,8 +51,8 @@ class ProfileScreen extends StatelessWidget {
               onTap: () => context.read<CheckUserCubit>().logOutUser(),
               child: Container(
                 padding: EdgeInsets.symmetric(
-                  horizontal: sizeX20 * Utils.getScalingFactor(context),
-                  vertical: sizeX10 * Utils.getScalingFactor(context),
+                  horizontal: 20 * Utils.getScalingFactor(context),
+                  vertical: 10 * Utils.getScalingFactor(context),
                 ),
                 decoration: BoxDecoration(
                   color: Colors.grey.shade200,

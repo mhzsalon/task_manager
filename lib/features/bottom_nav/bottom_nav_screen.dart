@@ -34,13 +34,13 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
       bottomNavigationBar: SafeArea(
         child: Container(
           padding: EdgeInsets.symmetric(
-            horizontal: sizeX30 * Utils.getScalingFactor(context),
-            vertical: sizeX14 * Utils.getScalingFactor(context),
+            horizontal: 30 * Utils.getScalingFactor(context),
+            vertical: 14 * Utils.getScalingFactor(context),
           ),
           margin: EdgeInsets.only(
-            left: sizeX10 * Utils.getScalingFactor(context),
-            right: sizeX10 * Utils.getScalingFactor(context),
-            bottom: sizeX14 * Utils.getScalingFactor(context),
+            left: 10 * Utils.getScalingFactor(context),
+            right: 10 * Utils.getScalingFactor(context),
+            bottom: 14 * Utils.getScalingFactor(context),
           ),
           decoration: BoxDecoration(
             color: AppColors.primaryColor,
@@ -85,8 +85,8 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   Widget _tabItemWidget(String tab, int index) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: sizeX20 * Utils.getScalingFactor(context),
-        vertical: sizeX12 * Utils.getScalingFactor(context),
+        horizontal: 20 * Utils.getScalingFactor(context),
+        vertical: 12 * Utils.getScalingFactor(context),
       ),
       decoration: BoxDecoration(
         border: Border.all(color: AppColors.primaryColor),
